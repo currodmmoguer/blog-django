@@ -61,3 +61,7 @@ body {
   color: #943526;
   text-decoration: none !important;
 }
+
+.a{
+  text-emphasis: none;
+}
