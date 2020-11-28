@@ -1,0 +1,35 @@
+nav {
+  background: #faf9f5 !important;
+  border-bottom: 1px solid #d9d6d0;
+}
+
+.navbar-brand {
+  color: #943526 !important;
+  font-size: 3rem !important;
+  font-family: "Playfair Display", serif;
+}
+
+body {
+  background: url("../img/fondo.webp");
+  background-position: left top;
+  background-size: auto;
+  background-repeat: repeat;
+  background-attachment: scroll;
+}
+
+.block {
+    background-color: #faf9f5;
+    padding: 1rem 5rem;
+}
+
+.post-title {
+    color: #943526 !important;
+  font-size: 2rem !important;
+  font-family: "Playfair Display", serif;
+  margin-bottom: 1rem;
+}
+
+.post-text {
+    font-size: 1rem !important;
+    text-align: justify;
+}

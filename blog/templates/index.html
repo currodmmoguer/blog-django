@@ -1,0 +1,65 @@
+{% extends 'base.html' %}
+{% load filters %}
+
+{% block content %}
+
+
+{% if descripcion %}
+<div class="row justify-content-center">
+    <div class="col-10 block" href="">
+
+        <a href="{% url 'post' pk=descripcion.pk %}">
+            <div class="post-title">{{descripcion.title}}</div>
+        </a>
+        <div class="post-text">
+            <p>{{descripcion.text|truncatechars:500|hide_img|safe}}</p>
+        </div>
+
+        <div class="col-12 text-center">
+            {% if descripcion.text|length > 500 %}
+            <a href="{% url 'post' pk=descripcion.pk %}" class="btn-ver-mas">Leer más</a>
+            {% endif %}
+        </div>
+    </div>
+</div>
+{% endif %}
+
+
+
+<div class="my-5"></div>
+
+
+{% if posts %}
+
+
+
+<div class="row justify-content-center mb-5">
+
+    <div class="col-10 block">
+        {% for post in posts %}
+
+        <div class="row px-5">
+            <div class="col-12">
+                <a href="{% url 'post' pk=post.pk %}">
+                    <div class="post-title">{{post.title}}</div>
+                </a>
+
+                <div class="post-text">
+                    {{post.text|truncatechars:500|hide_img|safe}}
+                </div>
+            </div>
+
+            <div class="col-12 text-center">
+                {% if post.text|length > 500 %}
+                <a href="{% url 'post' pk=post.pk %}" class="btn-ver-mas">Leer más</a>
+                {% endif %}
+            </div>
+
+        </div>
+
+        {% endfor %}
+
+    </div>
+</div>
+{% endif %}
+{% endblock %}

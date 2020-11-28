@@ -1,0 +1,18 @@
+{% extends 'base.html' %}
+
+{% block content %}
+
+
+
+
+<div class="row justify-content-center mb-4">
+
+    <div class="col-10 block">
+        <div class="post-title">{{post.title}}</div>
+        <div class="post-text">
+            {{post.text|safe}}
+        </div>
+
+    </div>
+</div>
+{% endblock %}
