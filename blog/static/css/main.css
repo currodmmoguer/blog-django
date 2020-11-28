@@ -22,22 +22,6 @@ body {
   padding: 2.5rem 5rem !important;
 }
 
-.post-title {
-  color: #943526 !important;
-  font-size: 2.2rem !important;
-  font-family: "Playfair Display", serif;
-  margin-bottom: 1rem;
-}
-
-.post-title:hover {
-  text-decoration: none !important;
-}
-
-.post-text {
-  font-size: 1rem !important;
-  text-align: justify;
-}
-
 .btn-ver-mas {
   display: inline-block;
   font-weight: 600;
@@ -62,6 +46,18 @@ body {
   text-decoration: none !important;
 }
 
-.a{
-  text-emphasis: none;
+.post-title {
+  color: #943526 !important;
+  font-size: 2.2rem !important;
+  font-family: "Playfair Display", serif;
+  margin-bottom: 1rem;
+}
+
+.post-title:hover {
+  text-decoration: none !important;
+}
+
+.post-text {
+  font-size: 1rem !important;
+  text-align: justify;
 }
